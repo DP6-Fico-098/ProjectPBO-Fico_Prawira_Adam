@@ -17,4 +17,26 @@ public class Mahasiswa {
         this.IP3 = IP3;
 
     }
+
+    void info() {
+        System.out.println("Hai nama saya: " + nama);
+        System.out.println("Saya sekarang berumur: " + umur + " Tahun");
+        System.out.println("NIM saya: " + NIM);
+        System.out.println("Saya adalah mahasiswa: " + jurusan);
+    }
+
+    public void jumlahIPK(){
+        double hasilIPK = (IP1 + IP2 + IP3) / 3;
+        System.out.println("Hasil IPK saya selama 3 semester adalah: " + hasilIPK);
+    }
+
+    public void jumlahIPK(double semesterTambah){
+        double hasilIPK = (IP1 + IP2 + IP3 + semesterTambah) / 4;
+        System.out.println("Hasil IPK saya selama 4 adalah: " + hasilIPK);
+    }
+
+    public void jumlahIPK(double semesterTambah, double IP5){
+        double hasilIPK = (IP1 + IP2 + IP3 + semesterTambah + IP5) / 5;
+        System.out.println("Hasil IPK saya dengan lima semester adalah: " + hasilIPK);
+    }
 }
